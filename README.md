@@ -1,2 +1,2 @@
 # MYWEBPAGE
-It contains all about myself
+It contains all about my professional details.
