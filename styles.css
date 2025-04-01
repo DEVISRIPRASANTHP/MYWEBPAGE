@@ -1,14 +1,13 @@
 /* Apply smooth blue gradient background */
-body {
+html, body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #c0ddff, #a3c4ff);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Change from center to flex-start */
-    min-height: 100vh;
-    overflow-x: hidden; /* Keep horizontal scrolling disabled */
+    min-height: 100vh; /* Ensure page expands */
+    display: block; /* Fix flexbox issue */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
     overflow-y: auto; /* Enable vertical scrolling */
+    margin: 0;
+    padding: 0;
 }
 
 /* Glassmorphism effect */
@@ -99,6 +98,12 @@ nav ul li a:hover {
     text-align: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin: 15px auto;
+}
+
+/* Ensure Sections Allow Scrolling */
+section {
+    min-height: auto; /* Fixes full-height issue */
+    padding: 50px 20px; /* Adds spacing */
 }
 
 /* Footer */
