@@ -6,9 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Student Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: linear-gradient(120deg, #87CEFA, #1E90FF);
+            animation: flow 10s infinite alternate ease-in-out;
+        }
+        @keyframes flow {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 900px;
+            text-align: center;
+            color: white;
+        }
+        .hero {
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+        h1, h2 {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="glass">
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -20,17 +52,17 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <h1>Hi, I'm Devi Sri Prasanth </h1>
+    <section id="home" class="hero glass">
+        <h1>Hi, I'm Devi Sri Prasanth</h1>
         <p>From GVPCE, Vizag</p>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="about glass">
         <h2>About Me</h2>
         <p>I'm a student at Gayatri Vidya Parishad College Of Engineering in Computer Science. I love coding, exploring new technologies, and building web applications. Apart from coding, I enjoy sketching and watching science fiction movies.</p>
     </section>
 
-    <section id="education" class="education">
+    <section id="education" class="education glass">
         <h2>Education</h2>
         <ul>
             <li>B.Tech in Computer Science, Gayatri Vidya Parishad College Of Engineering, Expected Graduation: 2025</li>
@@ -39,7 +71,7 @@
         </ul>
     </section>
 
-    <section id="projects" class="projects">
+    <section id="projects" class="projects glass">
         <h2>Projects</h2>
         <ul>
             <li><strong>Android Weather App</strong> - A Kotlin-based mobile app that fetches real-time weather using an API.</li>
@@ -48,20 +80,20 @@
         </ul>
     </section>
 
-    <section id="skills" class="skills">
+    <section id="skills" class="skills glass">
         <h2>Skills</h2>
         <p>Programming Languages: C, C++, Python, Java</p>
         <p>Frameworks & Tools: Flask, React.js, Node.js, SQL</p>
         <p>Soft Skills: Teamwork, Leadership, Self-motivation</p>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact" class="contact glass">
         <h2>Contact Me</h2>
         <p>Email: devisriprashanth77@gmail.com</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/devi-sri-prasanth-pagadala-1029201a7">Connect with me</a></p>
     </section>
 
-    <footer>
+    <footer class="glass">
         <p>&copy; 2024 Devi Sri Prasanth. All Rights Reserved.</p>
     </footer>
 </body>
