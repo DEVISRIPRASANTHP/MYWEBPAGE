@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Student Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Smooth blue gradient background */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #9BBDF9, #699BFF);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding: 20px;
+        }
+
+        /* Glassmorphism effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 20px;
+            width: 80%;
+            max-width: 900px;
+            text-align: center;
+            color: #1a1a1a;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* Navigation Bar */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 20px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #102C57;
+        }
+
+        /* Sections */
+        section {
+            padding: 40px 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header class="glass">
@@ -25,50 +97,41 @@
         <p>From GVPCE, Vizag</p>
     </section>
 
-    <section id="about" class="about glass">
+    <section id="about" class="glass">
         <h2>About Me</h2>
-        <p>I'm a student at Gayatri Vidya Parishad College Of Engineering in Computer Science. I love coding, exploring new technologies, and building web applications. Apart from coding, I enjoy sketching and watching science fiction movies.</p>
+        <p>I'm a student at Gayatri Vidya Parishad College Of Engineering in Computer Science...</p>
     </section>
 
-    <section id="education" class="education glass">
+    <section id="education" class="glass">
         <h2>Education</h2>
         <ul>
-            <li>B.Tech in Computer Science, Gayatri Vidya Parishad College Of Engineering, Expected Graduation: 2025</li>
-            <li>Diploma in Computer Engineering, Govt Polytechnic, Dharmavaram (2019-2022)</li>
-            <li>Relevant Courses: Data Structures, OOP, Machine Learning, SQL</li>
+            <li>B.Tech in Computer Science, GVPCE</li>
+            <li>Diploma in Computer Engineering, Govt Polytechnic, Dharmavaram</li>
         </ul>
     </section>
 
-    <section id="projects" class="projects glass">
+    <section id="projects" class="glass">
         <h2>Projects</h2>
         <ul>
-            <li><strong>Android Weather App</strong> - A Kotlin-based mobile app that fetches real-time weather using an API.</li>
-            <li><strong>Grocery Store Management System</strong> - A Flask-MySQL web app for managing grocery inventory and orders.</li>
-            <li><strong>Smart Advocate Finding and Booking System</strong> - A legal services matchmaking platform using Node.js and MySQL.</li>
+            <li>Android Weather App - Kotlin-based app.</li>
+            <li>Grocery Store Management System - Flask-MySQL web app.</li>
+            <li>Smart Advocate Finding and Booking System - Node.js & MySQL.</li>
         </ul>
     </section>
 
-    <section id="skills" class="skills glass">
+    <section id="skills" class="glass">
         <h2>Skills</h2>
-        <p>Programming Languages: C, C++, Python, Java</p>
-        <p>Frameworks & Tools: Flask, React.js, Node.js, SQL</p>
-        <p>Soft Skills: Teamwork, Leadership, Self-motivation</p>
+        <p>C, C++, Python, Java, Flask, React.js, Node.js, SQL</p>
     </section>
 
-    <section id="contact" class="contact glass">
+    <section id="contact" class="glass">
         <h2>Contact Me</h2>
         <p>Email: devisriprashanth77@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/devi-sri-prasanth-pagadala-1029201a7">Connect with me</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/devi-sri-prasanth-pagadala-1029201a7">Connect</a></p>
     </section>
 
-    <footer class="glass">
+    <footer>
         <p>&copy; 2024 Devi Sri Prasanth. All Rights Reserved.</p>
     </footer>
-
-    <!-- Force Scroll Fix with JavaScript -->
-    <script>
-        document.body.style.overflowY = "auto";
-        document.documentElement.style.overflowY = "auto";
-    </script>
 </body>
 </html>
