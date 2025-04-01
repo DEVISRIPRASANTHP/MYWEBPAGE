@@ -1,4 +1,4 @@
-/* Apply smooth blue gradient background */
+v/* Apply smooth blue gradient background */
 html, body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #c0ddff, #a3c4ff);
